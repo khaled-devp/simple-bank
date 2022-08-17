@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center mt-6 mb-6">
+        <h1 class="text-6xl">Let's Get some <span class="text-yellow-600">MOOOONEY</span>!!</h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+            <div class="bg-orange-400 p-7 rounded-xl">
+                <h2 class="text-xl">Deposit</h2>
+                <h3 class="text-4xl">$<span id="deposit-amount">00</span></h3>
+            </div>
+            <div class="bg-amber-400 p-7 rounded-xl">
+                <h2 class="text-xl">Withdraw</h2>
+                <h3 class="text-4xl">$<span id="withdraw-amount">00</span></h3>
+            </div>
+            <div class="bg-red-400 p-7 rounded-xl">
+                <h2 class="text-xl">Balance</h2>
+                <h3 class="text-4xl">$<span id="balance-amount">1240</span></h3>
+            </div>    
+        </section>
+        <section class="grid grid-cols-2 gap-4 w-9/12 mx-auto  mt-10">
+            <div class="bg-pink-800 p-7 rounded-xl">
+                <h2 class="text-xl mb-3 text-white">Please Deposit</h2>
+                <input class="w-9/12 block mb-4 p-3 rounded-md"  type="number" name="" id="deposit-field" placeholder="$ Amount you want to deposit">
+            <button id="btn-deposit" class="text-md px-6 py-2 bg-orange-100 rounded-md text-green-600 hover:bg-sky-200 uppercase font-medium ">Deposit</button>
+            </div>
+            <div class="bg-emerald-300 p-7 rounded-xl">
+                <h2 class="text-xl mb-3 text-white">Please Withdraw</h2>
+                <input class="w-9/12 block mb-4 p-3 rounded-md"  type="number" name="" id="withdraw-field" placeholder="$ Amount you want to withdraw">
+            <button id="btn-withdraw" class="text-md px-6 py-2 bg-orange-100 rounded-md text-green-600 hover:bg-sky-200 uppercase font-medium ">Withdraw</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/calculate.js"></script>
+</body>
+</html>
